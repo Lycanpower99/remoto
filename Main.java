@@ -6,6 +6,11 @@ public class Main {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ArrayList<String>datosUsuario=rellenarDatos();
+		Estudiante estudiante = CrearEstudiante(datosUsuario);
+	}
+
+	private static Estudiante CrearEstudiante(ArrayList<String> datosUsuario) {
+		return new Estudiante(datosUsuario.get(0),datosUsuario.get(1), datosUsuario.get(2), datosUsuario.get(3), datosUsuario.get(4), datosUsuario.get(5));
 	}
 
 	private static ArrayList<String>rellenarDatos() {
