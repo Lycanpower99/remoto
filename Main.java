@@ -1,9 +1,15 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		ArrayList<String>datosUsuario=rellenarDatos();
+	}
+
+	private static ArrayList<String>rellenarDatos() {
+		ArrayList<String>datos = new ArrayList<String>();
 		String nombre = "";
 		String apellidos = "";
 		String fecha_nac = "";
@@ -25,6 +31,12 @@ public class Main {
 		System.out.print("Introduzca sutelefono: ");
 		telefono = sc.nextLine();
 		
+		datos.add(nombre);
+		datos.add(apellidos);
+		datos.add(fecha_nac);
+		datos.add(dni);
+		datos.add(estudios);
+		datos.add(telefono);
+		return datos;
 	}
-
 }
